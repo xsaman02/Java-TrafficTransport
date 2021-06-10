@@ -1,0 +1,98 @@
+Bystrc,Ecerova;30;350;Vejrostova
+Ondrouskova;40;340;Vejrostova
+Kubickova;60;355;Vejrostova
+Pristaviste;75;360;Obvodova
+Zoologicka zahrada;90;360;Obvodova
+Kamenolom;110;340;Kninicska
+Podlesi;120;335;Kninicska
+Branka;125;320;Kninicska
+Svratecka;140;315;Kninicska
+Vozovna komin;150;300;Kninicska
+Stranskeho;160;285;Kninicska2
+Brafova;155;260;Zabovreska
+Pisarky;140;225;Zabovreska
+Lipova;150;210;Hlinky
+Vystaviste-vstup G2;160;205;Hlinky
+Vystaviste-hlavni vstup;170;200;Hlinky
+Mendlovo Namesti;180;190;Hlinky
+Vaclavska;200;170;Vaclavska
+Hybesova;220;170;Hybesova
+Nove Sady;250;170;Nadrazni
+Hlavni Nadrazi;268;170;Nadrazni
+Malinovskeho Namesti;280;190;Rooseveltova
+Moravske Namesti;270;215;Stefanikova
+Antoninska;270;230;Stefanikova
+Pionyrska;270;240;Stefanikova
+Hrncirska;270;252;Stefanikova
+Sumavska;270;262;Stefanikova
+Kartouzska;270;278;Palackeho
+Jungmannova;270;290;Palackeho
+Husitska;270;305;Palackeho
+Semilasso;270;313;Blanskobystrcka
+Tylova;270;325;Blanskobystrcka
+Hudcova;270;335;Blanskobystrcka
+Koriskova;270;345;Blanskobystrcka
+Filkukova;270;355;Blanskobystrcka
+Reckovice;270;365;Blanskobystrcka
+
+Technologicky Park;230;340;Purkynova
+Technicke muzeum;240;330;Purkynova
+Cervinkova;240;320;Purkynova
+Skacelova;240;305;Purkynova
+Dobrovskeho;240;290;Jana Babaka
+Tererova;240;280;Jana Babaka
+Klusackova;240;265;Jana Babaka
+Nerudova;230;250;Nerudova
+Konecneho namesti;230;240;Veveri
+Grohova;240;230;Veveri
+Ceska;250;210;Husova
+Silingrovo namesti;230;190;Husova
+Vlhka;290;170;Krenova
+Masna;300;167;Krenova
+Zivotskeho;315;150;Taborskeho
+Geislerova;330;150;Taborskeho
+Buzkova;343;150;Taborskeho
+Otakara Sevcika;360;150;Taborskeho
+Delnicky dum;380;150;Lisenska
+Julianov;395;150;Lisenska
+
+Modrice, smycka;180;20;Videnska
+Modrice, Tyrsova;180;35;Videnska
+Modricka cihelna;180;45;Videnska
+Moravanska;180;55;Videnska
+Moravske lany;180;65;Videnska
+Orechovska;180;85;Videnska
+Bohunicka;180;100;Videnska
+Ustredni hrbitov;180;112;Videnska
+Hluboka;180;125;Videnska
+Celni;180;140;Videnska
+Nemocnice M. bratri;180;151;Videnska
+Porici;180;160;Videnska
+Malinovskeho Namesti.;280;190;Cejl
+Kornerova;300;190;Cejl
+Tkalcovska;310;190;Cejl
+Vojenska nemocnice;340;195;Bubenickova
+Kuldova;350;185;Bubenickova
+Stara osada;360;170;Bubenickova
+
+Technologicky Park.;230;340;Kolejni
+Vedeckotechnicky park;220;350;Kolejni
+Kolejni;210;340;Kolejni
+Podnikatelska;220;330;Kolejni
+Technicka;220;320;Technicka
+Horska;210;315;Technicka
+Zahrebska;210;305;Kralovopolska
+SkacelovaB;240;305;Kralovopolska
+Slovanske namesti;253;305;Husitska
+Husitska.;270;305;Husitska
+Semilasso-B;280;313;Kosmova
+Kralovo Pole, nadrazi;305;320;Kosmova
+Kocianka;310;300;Krizikova
+Kralovopolska strojirna;320;300;Krizikova
+Divisova ctvrt;320;290;Krizikova
+U tunylku;330;280;Krizikova
+Halasovo namesti;340;280;Okruzni
+Poliklinika Lesna;350;270;Okruzni
+Lesna, nadrazi;360;260;Okruzni
+Stefanikova ctvrt;350;250;Merhautova
+

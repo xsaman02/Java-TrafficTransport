@@ -1,0 +1,53 @@
+<project name="ija-app" basedir="." default="main">
+<!--        xmlns:fx="javafx:com.sun.javafx.tools.ant">-->
+
+    <property name="src.dir"     value="src"/>
+	<property name="doc.dir"     value="doc"/>
+    <property name="build.dir"   value="build"/>
+    <property name="classes.dir" value="${build.dir}"/>
+    <property name="jar.dir"     value="dest"/>
+    <property name="main-class"  value="vut.fit.ija.main.view.FXMain"/>
+    <property name="lib.dir"     value="lib"/>
+    <property name="javafx.dir"  value="${lib.dir}/javafx-sdk-11.0.2/lib"/>
+    <property name="view.path"   value="vut/fit/ija/main/view"/>
+    <property name="file-fxml"   value="${src.dir}/${view.path}/main_window.fxml"/>
+
+    <path id="classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="build" depends="clean">
+        <mkdir dir="${classes.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="classpath"/>
+        <copy file="${file-fxml}" todir="${classes.dir}/${view.path}"/>
+    </target>
+
+    <target name="compile" depends="build,doc">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java fork="true" classname="${main-class}">
+            <classpath>
+                <path refid="classpath"/>
+                <path location="${jar.dir}/${ant.project.name}.jar"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="main" depends="compile,run"/>
+
+	<target name="doc">
+	    <javadoc sourcepath="${src.dir}" destdir="${doc.dir}"/>
+  	</target>
+
+</project>

@@ -1,0 +1,108 @@
+1;Bystrc,Ecerova;0
+1;Ondrouskova;0
+1;Kubickova;0
+1;Pristaviste;0
+1;Zoologicka zahrada;0
+1;Kamenolom;0
+1;Podlesi;0
+1;Branka;0
+1;Svratecka;0
+1;Vozovna komin;0
+1;Stranskeho;0
+1;Brafova;0
+1;Pisarky;0
+1;Lipova;0
+1;Vystaviste-vstup G2;0
+1;Vystaviste-hlavni vstup;0
+1;Mendlovo Namesti;0
+1;Vaclavska;0
+1;Hybesova;0
+1;Nove Sady;0
+1;Hlavni Nadrazi;0
+1;Benesova;1
+1;Malinovskeho Namesti;0
+1;Moravske Namesti;0
+1;Antoninska;0
+1;Pionyrska;0
+1;Hrncirska;0
+1;Sumavska;0
+1;Kartouzska;0
+1;Jungmannova;0
+1;Husitska;0
+1;Palackeho2;1
+1;Semilasso;0
+1;Tylova;0
+1;Hudcova;0
+1;Koriskova;0
+1;Filkukova;0
+1;Reckovice;0
+
+12;Technologicky Park;0
+12;Technicke muzeum;0
+12;Cervinkova;0
+12;Skacelova;0
+12;Dobrovskeho;0
+12;Tererova;0
+12;Klusackova;0
+12;Nerudova;0
+12;Konecneho namesti;0
+12;Grohova;0
+12;Ceska;0
+12;Silingrovo namesti;0
+12;Nove Sady;0
+12;Hlavni Nadrazi;0
+12;Vlhka;0
+12;Masna;0
+12;Zivotskeho;0
+12;Geislerova;0
+12;Buzkova;0
+12;Otakara Sevcika;0
+12;Delnicky dum;0
+12;Julianov;0
+
+2;Modrice, smycka;0
+2;Modrice, Tyrsova;0
+2;Modricka cihelna;0
+2;Moravanska;0
+2;Moravske lany;0
+2;Orechovska;0
+2;Bohunicka;0
+2;Ustredni hrbitov;0
+2;Hluboka;0
+2;Celni;0
+2;Nemocnice M. bratri;0
+2;Porici;0
+2;Videnska2;1
+2;Vaclavska;0
+2;Hybesova;0
+2;Nove Sady;0
+2;Hlavni Nadrazi;0
+2;Benesova;1
+2;Malinovskeho Namesti.;0
+2;Kornerova;0
+2;Tkalcovska;0
+2;Vojenska nemocnice;0
+2;Kuldova;0
+2;Stara osada;0
+
+53;Technologicky Park.;0
+53;Vedeckotechnicky park;0
+53;Kolejni;0
+53;Podnikatelska;0
+53;Technicka;0
+53;Horska;0
+53;Zahrebska;0
+53;SkacelovaB;0
+53;Slovanske namesti;0
+53;Husitska.;0
+53;Palackeho2;1
+53;Semilasso-B;0
+53;Kralovo Pole, nadrazi;0
+53;Kocianka;0
+53;Kralovopolska strojirna;0
+53;Divisova ctvrt;0
+53;U tunylku;0
+53;Halasovo namesti;0
+53;Poliklinika Lesna;0
+53;Lesna, nadrazi;0
+53;Stefanikova ctvrt;0

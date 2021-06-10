@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vut.fit.ija.main.controller.Controller">
+   <bottom>
+      <HBox maxHeight="30.0" minHeight="30.0" prefHeight="30.0" BorderPane.alignment="BOTTOM_LEFT">
+         <children>
+            <Label text="Simulation:">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="flowButton" minWidth="62.0" mnemonicParsing="false" onMouseClicked="#changeFlow" text="Pause">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="2.0" top="1.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="clock" alignment="CENTER" contentDisplay="CENTER" text="00:00:00" textAlignment="CENTER">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="7.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Slider fx:id="simulationSlider" onMouseDragged="#simulationSliderMouseDragged" onMousePressed="#simulationSliderMousePressed" onMouseReleased="#simulationSliderMouseReleased" prefWidth="500.0">
+               <HBox.margin>
+                  <Insets left="4.0" top="7.0" />
+               </HBox.margin>
+            </Slider>
+            <Label text="speed">
+               <HBox.margin>
+                  <Insets left="20.0" top="6.0" />
+               </HBox.margin>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#decreaseTimeSpeed" prefHeight="20.0" prefWidth="20.0" style="-fx-background-radius: 50%;" text="-">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets left="7.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="283.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#increaseTimeSpeed" prefHeight="20.0" prefWidth="20.0" style="-fx-background-radius: 50%;" text="+">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="9.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="timeSpeedLabel" alignment="CENTER" text="1.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="6.0" top="2.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets top="4.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <right>
+      <VBox maxWidth="170.0" minHeight="-Infinity" minWidth="170.0" prefWidth="170.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" text=" City" />
+            <ComboBox fx:id="cityBox" maxWidth="1.7976931348623157E308" onAction="#cityChanged" prefWidth="150.0" />
+            <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="136.0">
+               <children>
+                  <VBox layoutX="25.0" layoutY="-35.0" prefHeight="165.33333333333334" prefWidth="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="149.0" text="Street Info">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="151.0" text="Street Name" />
+                        <TextField fx:id="streetNameField" editable="false" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="150.0" />
+                        <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="150.0" text="Street Traffic" />
+                        <ComboBox fx:id="streetDensityBox" disable="true" onAction="#densityChanged" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="140.0">
+               <children>
+                  <VBox layoutX="25.0" layoutY="-2.0" prefHeight="117.0" prefWidth="150.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                     <children>
+                        <Label alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="149.0" text="Stop Info">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="150.0" text="Stop Name" />
+                        <TextField fx:id="stopNameField" editable="false" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="150.0" />
+                        <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="153.0" text="Street Name" />
+                        <TextField fx:id="stopStreetNameField" editable="false" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="150.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <VBox maxWidth="1.7976931348623157E308" prefHeight="222.0">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="149.0" text="Vehicle Info">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="150.0" text="Line Number" />
+                  <HBox maxWidth="1.7976931348623157E308" prefHeight="30.0">
+                     <children>
+                        <TextField fx:id="busLineNameField" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="78.0" />
+                        <Button fx:id="scheduleButton" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#scheduleButtonClicked" prefHeight="30.0" prefWidth="100.0" text="Schedule">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="153.0" text="Line Type" />
+                  <TextField fx:id="busLineTypeField" editable="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="30.0" prefWidth="150.0" />
+                  <Label maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="153.0" text="Next stop" />
+                  <TextField fx:id="busNextStopNameField" editable="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="30.0" />
+                  <Label fx:id="busArrivalTimeField" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="20.0" prefWidth="153.0" text="Scheduled Arrival" />
+                  <HBox maxWidth="1.7976931348623157E308" prefHeight="30.0">
+                     <children>
+                        <TextField fx:id="busNextStopArrivalTimeField" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="78.0" />
+                        <TextField fx:id="busDelay" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="78.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </VBox>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="map" scaleY="-1.0" style="-fx-background-color: royalblue; -fx-background-radius: 1%;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane fx:id="itinerary" minHeight="234.0" opacity="0.68" scaleY="-1.0" style="-fx-background-color: white; -fx-background-radius: 2%;" translateZ="10.0" visible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                     <children>
+                        <HBox prefHeight="26.0" prefWidth="631.0">
+                           <children>
+                              <Label text="Line">
+                                 <padding>
+                                    <Insets left="3.0" top="2.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="7.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="itineraryLineId" text="1">
+                                 <padding>
+                                    <Insets left="3.0" top="2.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="3.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label text="-&gt;">
+                                 <padding>
+                                    <Insets left="3.0" top="1.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="3.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="itineraryFinalStop" text="Ecerova">
+                                 <padding>
+                                    <Insets left="3.0" top="2.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="3.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="itineraryDelay" text="+20min" textFill="#fc0000">
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets top="3.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="lineSchedule" layoutX="14.0" layoutY="359.0" minWidth="300.0" opacity="0.68" scaleY="-1.0" style="-fx-background-color: white; -fx-background-radius: 2%;" visible="false" AnchorPane.bottomAnchor="244.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <HBox alignment="TOP_RIGHT" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="300.0">
+                           <children>
+                              <Label text="Line">
+                                 <padding>
+                                    <Insets top="2.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="7.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lineScheduleLineId" text="1">
+                                 <padding>
+                                    <Insets left="3.0" top="2.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="3.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label text="-&gt;">
+                                 <padding>
+                                    <Insets left="3.0" top="1.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="3.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lineScheduleFinalStop" text="Ecerova">
+                                 <padding>
+                                    <Insets left="3.0" top="2.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="3.0" right="7.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets top="3.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
