@@ -1,0 +1,73 @@
+## model.map
+
+/* Represents one point in map. 
+ * distanceTravelled is distance from first point in same Shape */
+Class ShapePoint 
+	
+/* Represents piece of map without any cross-sections. 
+ * Consists of ordered series of points. 
+ * Traffic level influences vehicle speed.
+ * Supported traffic defines visual representation of segment in map. */
+Class Shape
+
+/* Represents city street. Curently consists of only one Shape, 
+ * but can be extended to series of Shapes. */
+Class Street
+
+/* Represents a map of city */
+Class CityMap
+
+## model.infrastructure
+
+/* Represents Stop. Lies on a ShapePoint, which defines the Shape and Street.
+ * Can be related to specific transit type by looking at th Shape.
+Class Stop
+
+/* Represents public transportation Route. Path is defined by ordered series of Shapes.
+ * Defines Stops, where it stops along the way. */
+Class Route
+
+/* Represents Shape with sequence number, related to a specific Route */
+Class RouteSegment
+
+## model.schedule
+
+/* Represents one particular stop at particular Time, related to a Trip */
+Class StopTime
+
+/* Represents one-directional trip on a Route at particular time. */
+Class Trip
+
+/* Represents schedule of one route, defined by specific trips made on that route. */
+Class RouteSchedule
+
+/* Represents public transport schedule for a city. Defined by schedules for each route. */
+Class CitySchedule
+
+## model.vehicles
+
+/* Represents public transport vehicle with its average speed used for visualization. */
+Class PublicVehicle
+
+## model.simulation
+
+/* Represents public traffic simulation for particular city. */
+Class TrafficSimulation
+
+/* Represents simulated city. Defined by its map and traffic schedule */
+Class City
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

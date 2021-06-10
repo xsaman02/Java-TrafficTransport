@@ -1,0 +1,8 @@
+Kninicska,100,360
+Kninicska,100,340
+Kninicska,120,340
+Kninicska,120,320
+Kninicska,140,320
+Kninicska,140,300
+Kninicska,160,300
+Kninicska,160,280

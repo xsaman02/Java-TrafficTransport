@@ -1,0 +1,4 @@
+Kamenolom;110;340;Kninicska
+Podlesi;120;335;Kninicska
+Branka;125;320;Kninicska
+Svratecka;140;315;Kninicska
